@@ -46,7 +46,7 @@ class SearchInModelServiceProvider extends ServiceProvider {
 
            $this->publishes([
             __DIR__.'/Traits/collection/CollectionHelpers.php' => app_path('Traits/collection/CollectionHelpers.php'),
-            __DIR__.'/Traits/controller/HasSearch.php' => app_path('Traits/controller/HasSearch.php')
+            __DIR__.'/Traits/controller/Search/HasSearch.php' => app_path('Traits/controller/HasSearch.php')
         
         ], 'search-in-model-traits');
 

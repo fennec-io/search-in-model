@@ -1,6 +1,6 @@
 <?php
 
-namespace Fennecio\SearchInModel\Traits\controller\Search;
+namespace App\Traits\controller\Search;
 
 use Fennecio\SearchInModel\Models\BaseModel;
 use Inertia\Inertia;
@@ -21,5 +21,6 @@ trait HasSearch {
             ]
         ]);
     }
+
 
 }

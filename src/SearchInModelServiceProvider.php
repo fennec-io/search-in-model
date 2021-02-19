@@ -26,27 +26,27 @@ class SearchInModelServiceProvider extends ServiceProvider {
 
 
            $this->publishes([
-            __DIR__.'/Exceptions/SearchException.php' => app_path('Exceptions/Search/SearchException.php'),
+            __DIR__.'/Stubs/SearchException.php' => app_path('Exceptions/Search/SearchException.php'),
         ], 'search-in-model-exception');
 
         
            $this->publishes([
-            __DIR__.'/Requests/SearchRequest.php' => app_path('Http/Requests/SearchRequest.php'),
+            __DIR__.'/Stubs/SearchRequest.php' => app_path('Http/Requests/SearchRequest.php'),
         ], 'search-in-model-request');
 
         
            $this->publishes([
-            __DIR__.'/Models/BaseModel.php' => app_path('Models/BaseModel.php'),
+            __DIR__.'/Stubs/BaseModel.php' => app_path('Models/BaseModel.php'),
         ], 'search-in-model-models');
 
            $this->publishes([
-            __DIR__.'/Repositories/BaseRepository.php' => app_path('Repositories/BaseRepository.php'),
-        ], 'search-in-model-repositories');
+            __DIR__.'/Stubs/SearchInModel.php' => app_path('Actions/Search/SearchInModel.php'),
+        ], 'search-in-model-classes');
         
 
            $this->publishes([
-            __DIR__.'/Traits/collection/CollectionHelpers.php' => app_path('Traits/collection/CollectionHelpers.php'),
-            __DIR__.'/Traits/controller/Search/HasSearch.php' => app_path('Traits/controller/HasSearch.php')
+            __DIR__.'/Stubs/CollectionHelpers.php' => app_path('Traits/collection/CollectionHelpers.php'),
+            __DIR__.'/Stubs/HasSearch.php' => app_path('Traits/controller/Search/HasSearch.php')
         
         ], 'search-in-model-traits');
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Fennecio\SearchInModel\Requests;
+namespace App\Http\Requests;
 
 use Fennecio\SearchInModel\Exceptions\SearchException;
 use Fennecio\SearchInModel\Traits\collection\CollectionHelpers;
@@ -8,7 +8,8 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class SearchRequest extends FormRequest
 {
-    use CollectionHelpers;
+    use CollectionHelpers
+    ;
 
     protected const INDEXES = [
         'result_type' => 'is_string',

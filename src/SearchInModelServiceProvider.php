@@ -42,7 +42,7 @@ class SearchInModelServiceProvider extends ServiceProvider {
            $this->publishes([
             __DIR__.'/Repositories/BaseRepository.php' => app_path('Repositories/BaseRepository.php'),
         ], 'search-in-model-repositories');
-
+        
 
            $this->publishes([
             __DIR__.'/Traits/collection/CollectionHelpers.php' => app_path('Traits/collection/CollectionHelpers.php'),

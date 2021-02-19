@@ -1,6 +1,6 @@
 <?php
 
-namespace Fennecio\SearchInModel\Http\Requests;
+namespace Fennecio\SearchInModel\Requests;
 
 use App\Exceptions\Search\SearchException;
 use App\Traits\collection\CollectionHelpers;

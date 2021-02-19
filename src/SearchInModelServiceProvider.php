@@ -26,8 +26,8 @@ class SearchInModelServiceProvider extends ServiceProvider {
 
 
            $this->publishes([
-            __DIR__.'/Stubs/SearchException.php' => app_path('Exceptions/Search/SearchException.php'),
-        ], 'search-in-model-exception');
+            __DIR__.'/Stubs/SearchCriteria.php' => app_path('Criteria/Search/SearchCriteria.php'),
+        ], 'search-in-model-criteria');
 
         
            $this->publishes([
@@ -39,6 +39,10 @@ class SearchInModelServiceProvider extends ServiceProvider {
             __DIR__.'/Stubs/BaseModel.php' => app_path('Models/BaseModel.php'),
         ], 'search-in-model-models');
 
+           $this->publishes([
+            __DIR__.'/Stubs/SearchInModel.php' => app_path('Actions/Search/SearchInModel.php'),
+        ], 'search-in-model-classes');
+        
            $this->publishes([
             __DIR__.'/Stubs/SearchInModel.php' => app_path('Actions/Search/SearchInModel.php'),
         ], 'search-in-model-classes');
